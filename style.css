@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top right,black,#212121);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content:space-around;
+}
+.board{
+    width: 360px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    height: 33.333%;
+    width: 100%;
+}
+.box{
+    width: 33.333%;
+    height: 100%;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    transition: background-color 1s,border-radius 3s;
+    cursor: pointer;
+}
+.doColorWhite{
+    color:white;
+}
+.doColorRed{
+    color:red;
+}
+.rightBorder{
+    border-right: 3px solid white;
+}
+.bottomBorder{
+    border-bottom: 3px solid white;
+}
+.disable{
+    pointer-events:none;
+}
+.sideLayout{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background-color: #383838;
+    border-radius: 10px;
+}
+.sideLayout div{
+    width: 90%;
+    height: 40%;
+    background-color: #101010;
+    transition:background-color 1s;
+    border-radius: 10px;
+    display:flex;
+}
+.changeBoxColor{
+    background-color: darkgoldenrod;
+    color:black;
+    border-radius: 30px;
+}
+div .points{
+    width: 30%;
+    height: 100%;
+    color: white;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.players .points img{
+    width:50%;
+    height:50%;
+}
+input{
+    border:0;
+    width:70%;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+    color:white;
+    background-color: transparent;
+}
+.result div{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.result .markGreen{
+    background-color: #53e211;
+    color:black;
+    font-weight: 600;
+}
+.result .markRed{
+    background-color: #d32424;
+    color:black;
+    font-weight: 600;
+}
+.reset{
+    width: 70%;
+    text-align: center;
+}
+.reset button{
+    width: 100px;
+    height:50px;
+    border:0;
+    border-radius: 10px;
+    background-color: transparent;
+    color:white;
+    font-size: larger;
+    font-weight: 700;
+}
+.reset button:hover{
+    background-color: grey;
+    color:black;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 20px;
+}
+.reset button:active{
+    transform: translateY(4px);
+}
+.result img{
+    height: 70%;
+    width: 25%;
+}

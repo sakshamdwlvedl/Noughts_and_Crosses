@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noughts & Crosses</title>
+    <link rel="icon" href="fevicon.png" type="image/png" sizes="16x16"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sideLayout players">
+            <div class="player1">
+                <input type="text" class="inputClass" value="Saksham">
+                <div class="points">
+                    <img src="tick.png" alt="Tick">
+                </div>
+            </div>
+            <div class="player2">
+                <input type="text" class="inputClass" value="Player 2">
+                <div class="points">
+                    <img src="tick.png" alt="Tick">
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <div class="row">
+                <div class="box rightBorder bottomBorder"></div>
+                <div class="box rightBorder bottomBorder"></div>
+                <div class="box bottomBorder"></div>
+            </div>
+            <div class="row">
+                <div class="box rightBorder bottomBorder"></div>
+                <div class="box rightBorder bottomBorder"></div>
+                <div class="box bottomBorder"></div>
+            </div>
+            <div class="row">
+                <div class="box rightBorder"></div>
+                <div class="box rightBorder"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="sideLayout result">
+            <div class="player1"></div>
+            <div class="player2"></div>
+        </div>
+        <div class="reset">
+            <button value="Reset the Board" onclick="resetBoard()">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
